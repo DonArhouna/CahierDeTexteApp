@@ -1,0 +1,88 @@
+/* Login.css */
+
+body {
+    background-color: #f0f0f0; /* Couleur de fond globale */
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    border-radius: 15px;
+    width: 12cm;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    background-color: #ffffff; 
+    text-align: center; 
+    border: 2px solid #5dade2; 
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 10px; /* Centre le logo */
+    width: 210px; /* Ajustez la taille du logo */
+}
+
+.card-header {
+    background-color: #ffffff;
+}
+
+h2 {
+    color: #5dade2; /* Couleur du titre */
+}
+
+.btn-primary {
+    background-color: #5dade2; /* Couleur du bouton */
+    border-radius: 8px;
+    height: 40px;
+    width: 30%; /* Pleine largeur */
+    right: inherit;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Couleur au survol */
+}
+
+.alert-danger {
+    margin-top: 1rem;
+}
+
+.input-group {
+    margin-bottom: 20px; /* Espace entre les champs */
+}
+
+.input-group .form-control {
+    width: 90%; /* Largeur maximale */
+    height: 30px; /* Hauteur du champ */
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 10px; /* Border radius */
+    padding: 0.5rem 1rem; /* Espacement interne */
+    font-size: 1rem; /* Taille de la police */
+  }
+  
+  .input-group .form-control:focus {
+    border-color: black; /* Couleur de la bordure au focus */
+    box-shadow: none; /* Supprimer l'ombre au focus */
+  }
+
+.links a {
+    color: #007bff; /* Couleur des liens */
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .login-card {
+        width: 90%; /* Largeur pour mobile */
+        padding: 20px; /* Réduire le padding */
+    }
+}

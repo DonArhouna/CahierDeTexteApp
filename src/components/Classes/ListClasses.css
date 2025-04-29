@@ -1,0 +1,64 @@
+.classe-container {
+    flex-grow: 1;
+    background: #fff;
+    height: calc(100vh - 60px); 
+    border-radius: 8px;
+    width: 77%;
+    margin-top: 45px;
+    margin-left: 388px;
+    padding: 25px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .classe-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .classe-table th,
+  .classe-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn,
+  .delete-btn,
+  .add-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .edit-btn {
+    color: #2980b9;
+  }
+  
+  .delete-btn {
+    color: #e74c3c;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  

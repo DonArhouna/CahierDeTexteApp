@@ -51,3 +51,4 @@ import api from './services/api';
 api.get('/campuses/')
   .then(res => console.log(res.data))
   .catch(err => console.error(err));
+  
