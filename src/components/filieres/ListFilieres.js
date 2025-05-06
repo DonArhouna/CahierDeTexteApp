@@ -69,7 +69,7 @@ const ListeFilieres = () => {
                   <td>{filiere.nom}</td>
                   <td>{filiere.campus.nom || 'N/A'}</td>
                   <td className="actions">
-                    <Link to={`/filieres/modifier/${filiere.id}`} className="edit-btn">
+                    <Link to={`/filieres/edit/${filiere.id}`} className="edit-btn">
                       <FiEdit />
                     </Link>
                     <button

@@ -7,10 +7,11 @@ import MainLayout from './layouts/MainLayout';
 import Dashboard from './pages/Dashboard';
 import ListeCampus from './components/Campus/ListeCampus';
 import AddCampus from './components/Campus/AddCampus';
-import ModifierCampus from './components/Campus/ModifierCampus';
+import EditCampus from './components/Campus/EditCampus';
 
 import ListeFilieres from './components/filieres/ListFilieres';
 import AddFiliere from './components/filieres/AddFilieres';
+import EditFiliere from './components/filieres/EditFiliere';
 
 import ListClasses from './components/Classes/ListClasses';
 import AddClasses from './components/Classes/AddClasses';
@@ -37,10 +38,11 @@ export default function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="campuses" element={<ListeCampus />} />
         <Route path="campuses/ajouter" element={<AddCampus />} />
-        <Route path="campuses/modifier/:id" element={<ModifierCampus />} />
+        <Route path="/campuses/edit/:id" element={<EditCampus />} />
         {/* Filières */}
         <Route path="filieres" element={<ListeFilieres />} />
         <Route path="filieres/ajouter" element={<AddFiliere />} />
+        <Route path="/filieres/edit/:id" element={<EditFiliere/>}/>
         {/* Classes */}
         <Route path="classes" element={<ListClasses />} />
         <Route path="classes/ajouter" element={<AddClasses />} />

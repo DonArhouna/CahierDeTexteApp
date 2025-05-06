@@ -71,9 +71,12 @@ const ListeCampus = () => {
                   <td>{campus.region}</td>
                   <td>{campus.adresse}</td>
                   <td className="actions">
-                    <Link to={`/campuses/modifier/${campus.id}`} className="edit-btn">
+
+                    <Link to={`/campuses/edit/${campus.id}`} className="edit-btn">
                       <FiEdit />
                     </Link>
+
+                    
                     <button 
                       onClick={() => handleDelete(campus.id)} 
                       className="delete-btn"
